@@ -7,4 +7,4 @@ RUN cd /tmp &&  tar xvfz apache-tomcat-9.0.76.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.76/* /usr/local/tomcat/
 ADD **/*.war /opt/tomcat/webapps/
 EXPOSE 8081
-CMD sudo /opt/tomcat/bin/startup.sh
+CMD /opt/tomcat/bin/startup.sh
