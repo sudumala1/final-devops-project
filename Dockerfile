@@ -5,6 +5,5 @@ RUN mkdir /usr/local/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.tar.gz  /tmp/apache-tomcat-9.0.76.tar.gz
 RUN cd /tmp &&  tar xvfz apache-tomcat-9.0.76.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.76/* /usr/local/tomcat/
-COPY /home/edureka/final-project/final-devops-project/target/ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
 EXPOSE 8081
 CMD /usr/local/tomcat/bin/startup.sh
