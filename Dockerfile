@@ -6,5 +6,5 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.ta
 RUN cd /tmp &&  tar xvfz apache-tomcat-9.0.76.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.76/* /usr/local/tomcat/
 COPY ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
-EXPOSE 8080
+EXPOSE 8081
 CMD /usr/local/tomcat/bin/startup.sh
